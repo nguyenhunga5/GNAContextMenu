@@ -40,7 +40,7 @@ open class GNAMenuView: UIView {
     private init(touchPointSize: CGSize, touchImage: UIImage?) {
         super.init(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: touchPointSize))
         self.touchPointImage = UIImageView(image: touchImage)
-        self.touchPointImage.contentMode = UIViewContentMode.scaleAspectFit
+        self.touchPointImage.contentMode = UIView.ContentMode.scaleAspectFit
         self.touchPointImage.frame = self.bounds
         addSubview(self.touchPointImage)
     }
